@@ -22,14 +22,24 @@ npm install
 
 ## Deployment
 
-Build Docker image, deploy infrastructure and Lambda handler
+Build Docker image, deploy infrastructure and Lambda PHP handler. Appends **-dev** to resource names
 
 ```bash
-npm install
+npx serverless deploy
 ```
 
 Once deployed the console will output a URL like below. Open the URL and you should see `Hello World` output to the
 screen. If you add the query string `?name=YOUR_NAME` to the URL, it will output `Hello YOUR_NAME`.
+
+
+### Deploying to production and staging environments
+
+Deploy infrastructure with a specific stage name appended to resource names. In the example below resources will have
+**-production** appended to them.
+
+```bash
+npx serverless deploy --stage production
+```
 
 ## Usage
 
