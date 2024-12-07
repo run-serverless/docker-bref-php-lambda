@@ -1,0 +1,19 @@
+service: php-docker
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+  deploymentBucket:
+    name: ${aws:accountId}-serverless-deploys
+    blockPublicAccess: true
+  ecr:
+    images:
+      bref-php-app:
+        path: ./
+ 
+functions:
+  handler:
+    image:
+      name: bref-php-app
+    url: true

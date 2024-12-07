@@ -1,0 +1,15 @@
+{
+  "name": "docker-php-lambda",
+  "version": "1.0.0",
+  "description": "PHP running in a Docker container for use on AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "composer install --working-dir=./app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^3.39.0"
+  }
+}
