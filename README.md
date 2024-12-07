@@ -28,8 +28,18 @@ Build Docker image, deploy infrastructure and Lambda PHP handler. Appends **-dev
 npx serverless deploy
 ```
 
-Once deployed the console will output a URL like below. Open the URL and you should see `Hello World` output to the
+Once deployed the console will output a URL `endpoint` like below. Open the URL and you should see `Hello World` output to the
 screen. If you add the query string `?name=YOUR_NAME` to the URL, it will output `Hello YOUR_NAME`.
+
+```bash
+Deploying php-docker to stage dev (us-east-1)
+
+✔ Service deployed to stack php-docker-dev (85s)
+
+endpoint: https://ysgw63bbcfifirgzjxws3wgtm40thets.lambda-url.us-east-1.on.aws/
+functions:
+  handler: php-docker-dev-handler
+```
 
 
 ### Deploying to production and staging environments
