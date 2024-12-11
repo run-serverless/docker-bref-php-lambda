@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "composer install --working-dir=./app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "docker run --rm -it --entrypoint= -v ./app:/var/task:ro serverless-php-docker-dev:bref-php-app vendor/bin/bref-local handler.php"
   },
   "author": "",
   "license": "ISC",
