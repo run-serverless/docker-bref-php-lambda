@@ -8,9 +8,9 @@ An example setup to run PHP inside a Docker container on AWS Lambda using [Bref]
 - Node.js and NPM
 - AWS account
 - AWS CLI installed and configured with credentials
-- A centralised Serverless Framework deployment S3 bucket using the format <aws-account-id>--serverless-deploys
+- A centralised Serverless Framework deployment S3 bucket using the format {aws-account-id}--serverless-deploys
 
-Replace <aws-account-id> with your AWS account ID. Create the bucket with default settings.
+Replace {aws-account-id} with your AWS account ID. Create the bucket with default settings.
 
 ## Installation
 
